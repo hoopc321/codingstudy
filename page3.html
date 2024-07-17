@@ -1,0 +1,90 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <meta charset="utf-8" />
+        <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no" />
+        <title>코딩 스터디, 3624 황선후</title>
+        <link rel="icon" type="image/x-icon" href="assets/favicon.ico" />
+        <link href="css/styles.css" rel="stylesheet" />
+    </head>
+    <body>
+        <div class="d-flex" id="wrapper">
+            <!-- sidebar-->
+            <div class="border-end bg-white" id="sidebar-wrapper">
+                <div class="sidebar-heading border-bottom bg-light">코딩 스터디<br> C언어 배우기</div>
+                <div class="list-group list-group-flush">
+                    <a class="list-group-item list-group-item-action list-group-item-light p-3" href="index.html">C 프로그램의 구조</a>
+                    <a class="list-group-item list-group-item-action list-group-item-light p-3" href="page2.html">변수 선언</a>
+                    <a class="list-group-item list-group-item-action list-group-item-light p-3" href="#!">입출력</a>
+                    <a class="list-group-item list-group-item-action list-group-item-light p-3" href="page4.html">실수형 표현(미구현)</a>
+                    <a class="list-group-item list-group-item-action list-group-item-light p-3" href="page5.html">타입 변환(미구현)</a>
+                    <a class="list-group-item list-group-item-action list-group-item-light p-3" href="page6.html">연산자(미구현)</a>
+                </div>
+            </div>
+            <!-- Page content wrapper -->
+            <div id="page-content-wrapper">
+                <!-- Topbar-->
+                <nav class="navbar navbar-expand-lg navbar-light bg-light border-bottom">
+                    <div class="container-fluid">
+                        <button class="btn btn-primary" id="sidebarToggle">메뉴</button>
+                        <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation"><span class="navbar-toggler-icon"></span></button>
+                        <div class="collapse navbar-collapse" id="navbarSupportedContent">
+                            <ul class="navbar-nav ms-auto mt-2 mt-lg-0">
+                                <li class="nav-item active"><a class="nav-link" href="index.html">홈<br></a></li>
+                                <li class="nav-item"><a class="nav-link" href="#!">문제 풀기<br></a></li>
+                                <li class="nav-item dropdown">
+                                    <a class="nav-link dropdown-toggle" id="navbarDropdown" href="#" role="button" data-bs-toggle="dropdown" aria-haspopup="true" aria-expanded="false">더보기</a>
+                                    <div class="dropdown-menu dropdown-menu-end" aria-labelledby="navbarDropdown">
+                                        <a class="dropdown-item" href="#!">이벤트 생성 함수</a>
+                                        <a class="dropdown-item" href="#!">다른 이벤트</a>
+                                        <div class="dropdown-divider"></div>
+                                        <a class="dropdown-item" href="#!">방명록</a>
+                                    </div>
+                                </li>
+                            </ul>
+                        </div>
+                    </div>
+                </nav>
+                <!-- Page content-->
+                <div class="container-fluid">
+                    <h1 class="mt-4">입출력<br><hr></h1>
+                    <div class="bbb">
+                        <p>
+                        scanf() 함수와 printf() 함수는 C언어 입출력 함수 중 가장 많이 사용되는 함수이다.<br>
+                        아래 예제는 a와 b라는 변수를 만들어 a에는 사용자가 입력하는 값을 지정해 출력하고 b는 10을 지정해 출력하는 코드다.
+                        </p>
+                    </div>
+                    <div class="fb">
+                        <p>예제</p>
+                    
+                    <div class="bb">
+                        #include&lt;stdio.h&gt;<br><br>int main()&#123;<br><br>int a, b;<br><br>scanf(%d, &a);<br>b=10;<br><br>printf("%d", a);<br>printf("%d", b);<br><br>return 0;<br>&#125;
+                    </div>
+                    <div class="bb">
+                    사용자가 5를 입력할 경우 출력값 :<br>
+                    5<br>10
+                    </div>
+                </div>                    
+                    <div class="bbb">   
+                        <br>
+                        printf() 함수에서 정수를 출력할 목적이기에 %d를 사용하였고 "" 뒤에 {, 변수}로 출력할 변수를 지정한다.<br>
+                        {, 변수} 형태에서 변수를 a+b 등의 수식으로 넣을 수 있다.<br><br>
+                        scanf() 함수도 prinf() 함수와 형태가 거의 동일하지만 변수 하나를 지정해 사용하여야한다.<br>
+                        또, 입력 받을 변수 앞에 &(주소연산자)를 붙이지 않으면 오류가 난다.<br><br><br><br><hr>
+                        <br>
+                    </div>
+                    <h1 class="mt-4">서식문자<br><hr></h1>
+                    <div class="bbb">
+                        <img src=서식문자1.jpg alt="Image"><br><br><br>
+                        예제의 %d는 10진수 정수를 입출력하기 위한 서식문자로, 원하는 입출력 데이터 형태에 따라 바꾸어 사용할 수 있다.
+                        모든 변수를 사용할 때에는 사용하려는 데이터의 크기와 형태를 고려하여 서식 문자를 설정해야 한다.
+                        <br><br><br><br>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <!--JS-->
+        <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.2.3/dist/js/bootstrap.bundle.min.js"></script>
+        <script src="js/scripts.js"></script>
+    </body>
+</html>
