@@ -10868,11 +10868,11 @@ body.sb-sidenav-toggled #wrapper #sidebar-wrapper {
 }
 .bbb {
   background-color: #fff;
-  padding: 1000px;
+  padding: 10px;
  
   -radiusborder: 5px;
   margin: 10px;
-  max-width: 1000px;
+  max-width: 100px;
 }
 .tooltip {
   position: relative;
